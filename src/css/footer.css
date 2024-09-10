@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: var(--textColor);
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 980px) { 
+    footer {
+        font-size: 14px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .social-list {
+        margin: auto;
+    }
+
+}

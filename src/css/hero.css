@@ -1,0 +1,125 @@
+.hero-section {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding-top: 180px;
+    padding-bottom: 200px;
+}
+
+.hero-inner-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.hero-title-wrapper  {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.hero-headline {
+    color: var(--textColor);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.details-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-column-gap: 20px;
+    padding-top: 60px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    background: var(--primaryColor)
+}
+
+.detail-react-icon {
+    color: var(--iconColor);
+    font-size: 32px;
+}
+
+.detail-span {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+@media screen and (max-width: 1600px) {
+    .hero-headline {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .hero-section {
+        padding: 120px 0;
+    }
+
+    .hero-title-wrapper  {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    .details-list {
+        grid-column-start: 1;
+        grid-column-end: 12;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-title-wrapper  {
+        text-align: left;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .hero-headline {
+        font-size: 28px;
+    }
+
+    .details-list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-gap: 20px;
+        padding-top: 40px;
+    }
+
+    .detail-item {
+        justify-content: start;
+    }
+
+    .detail-icon {
+        padding: 6px;
+    }
+
+    .detail-react-icon {
+        color: var(--iconColor);
+        font-size: 24px;
+    }
+
+    .detail-span {
+        font-size: 16px;
+    }
+}

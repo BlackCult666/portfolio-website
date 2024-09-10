@@ -1,0 +1,86 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-column: 1 / 13;
+}
+
+.card {
+    background-color: var(--primaryColor);
+    border-radius: 32px;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+#first-card {
+    margin-top: 20px;
+}
+
+#second-card, #third-card {
+    height: 400px;
+}
+
+#fourth-card {
+    margin-top: 60px;
+}
+
+#fifth-card {
+    margin-top: 120px;
+}
+
+.mockup-image {
+    width: 100%;
+    height: 100%;
+    /*background-image: url(assets/portfolio.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .card {
+        height: 520px;
+    }
+
+    #second-card, #third-card {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .card {
+        height: 480px;
+    }
+
+    #second-card, #third-card {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #first-card {
+        margin-bottom: 0;
+    }
+
+    #third-card, #fourth-card, #fifth-card {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .card, #second-card, #third-card{
+        height: 400px;
+    }
+
+    .double-card {
+        height: 100%;
+    }
+
+    #first-card, #third-card, #fourth-card, #fifth-card {
+        margin-top: 0;
+    }
+}

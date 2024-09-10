@@ -1,0 +1,112 @@
+nav {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--textColor);
+    padding: 40px 0;
+    position: relative;
+}
+
+.navigation-placeholder {
+    height: 68px;
+}
+
+.navigation-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding: 0 60px;
+    z-index: 100;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    gap: 10px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 3; 
+    left: 0;
+    top: 0;
+    background-color: var(--bgColor); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+.overlay-bg {
+    width: 50%;
+    height: 100%;
+    background-color: var(--primaryColor);
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.overlay-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: left;
+}
+
+.overlay-projects {
+    margin-bottom: 30px;
+}
+
+.overlay-span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.overlay a {
+    transition: 0.3s; 
+}
+
+@media screen and (max-width: 980px) {
+    nav {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .nav-menu:hover {
+        color: var(--textColor);
+    }
+
+    .navigation-placeholder {
+        height: 30px;
+    }
+
+    .navigation-bar {
+        background-color: var(--bgColor);
+        padding: 0 20px;
+    }
+
+    .overlay-bg {
+        width: 0%;
+    }
+
+    .overlay-content {
+        padding-left: 20px;
+    }
+}
